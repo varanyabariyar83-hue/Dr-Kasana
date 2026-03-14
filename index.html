@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr. Kasana Advance Naturopathy & Acu Health Centre — Zeta I, Greater Noida</title>
+  <meta name="description" content="Dr. Kasana Advance Naturopathy & Acu Health Centre — RC Plaza, Zeta I, Greater Noida. Open daily 9 AM–7:30 PM. Call +91 99904 45265."/>
+  <meta property="og:title" content="Dr. Kasana Advance Naturopathy & Acu Health Centre"/>
+  <meta property="og:description" content="Natural healing through Naturopathy & Acupuncture. Zeta I, Greater Noida."/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+/* ══════════════════════════════════════════════════════════
+   DR. KASANA ADVANCE NATUROPATHY & ACU HEALTH CENTRE
+   Organic Healing · Forest Green + Bamboo Gold + Rice Paper
+   Playfair Display (serif display) + DM Sans (body)
+   ══════════════════════════════════════════════════════════ */
+:root {
+  --forest:    #1a3d2b;
+  --forest-l:  #245c3f;
+  --forest-d:  #0d2018;
+  --forest-xl: #e8f3ec;
+  --forest-xxl:#f2f8f4;
+  --bamboo:    #c4860a;
+  --bamboo-l:  #e0a020;
+  --bamboo-d:  #8a5c00;
+  --bamboo-xl: #fff8e8;
+  --bamboo-xxl:#fffdf5;
+  --sage:      #7aaa82;
+  --sage-l:    #9dc4a4;
+  --sage-xl:   #e0ede2;
+  --rice:      #faf8f2;
+  --linen:     #f4f0e4;
+  --parchment: #ede7d4;
+  --text:      #0d2018;
+  --muted:     #4a6b50;
+  --border:    #d4e0d6;
+  --white:     #ffffff;
+  --ease:      cubic-bezier(.23,1,.32,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--rice);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.75;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+::selection{background:var(--forest);color:#fff}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:var(--sage);border-radius:4px}
+
+/* ══ PAPER TEXTURE OVERLAY ══ */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E")}
+
+/* ══ KEYFRAMES ══ */
+@keyframes fadeUp   {from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn   {from{opacity:0}to{opacity:1}}
+@keyframes floatY   {0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes shimmer  {0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes ticker   {from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes waPulse  {0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.3),0 0 0 0 rgba(37,211,102,.2)}60%{box-shadow:0 6px 24px rgba(37,211,102,.3),0 0 0 14px rgba(37,211,102,0)}}
+@keyframes fgPulse  {0%,100%{box-shadow:0 6px 24px rgba(26,61,43,.3),0 0 0 0 rgba(26,61,43,.2)}60%{box-shadow:0 6px 24px rgba(26,61,43,.3),0 0 0 14px rgba(26,61,43,0)}}
+@keyframes breathe  {0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@keyframes pulse    {0%,100%{opacity:.6;r:3}50%{opacity:1;r:5}}
+@keyframes flowPath {0%{stroke-dashoffset:600}100%{stroke-dashoffset:0}}
+@keyframes needleDrop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes energyGlow{0%,100%{opacity:.3;filter:blur(2px)}50%{opacity:.8;filter:blur(0)}}
+@keyframes leafSway {0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+@keyframes ripple   {0%{transform:scale(0);opacity:.6}100%{transform:scale(2.5);opacity:0}}
+@keyframes openBlink{0%,100%{background:#22c55e}50%{background:#16a34a}}
+.reveal{animation:fadeUp .88s var(--ease) both}
+
+/* ══ NAV ══ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:1.3rem 5vw;transition:background .45s,padding .4s,box-shadow .4s}
+.nav.stuck{background:rgba(250,248,242,.97);backdrop-filter:blur(20px);padding:.8rem 5vw;box-shadow:0 1px 0 var(--border),0 4px 24px rgba(26,61,43,.08)}
+.nav-brand{display:flex;align-items:center;gap:.8rem;cursor:pointer}
+.nav-leaf{font-size:1.4rem;animation:leafSway 4s ease-in-out infinite;display:inline-block;transform-origin:bottom center}
+.nav-logo-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1rem;color:var(--forest);letter-spacing:.01em;line-height:1.1}
+.nav-logo-sub{font-size:.55rem;font-weight:500;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:.1rem}
+.nav-links{display:flex;gap:1.8rem;align-items:center}
+.nav-links a{font-size:.73rem;font-weight:500;color:var(--muted);transition:color .2s;letter-spacing:.06em;text-transform:uppercase}
+.nav-links a:hover{color:var(--forest)}
+.nav-cta{background:var(--forest)!important;color:#fff!important;padding:.42rem 1.15rem;border-radius:100px;font-size:.7rem!important;font-weight:600!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--forest-l)!important}
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.ham span{display:block;width:22px;height:1.5px;background:var(--forest);border-radius:2px;transition:transform .3s,opacity .3s}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.mob-menu{position:fixed;inset:0;z-index:999;background:var(--forest-d);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .35s}
+.mob-menu.open{opacity:1;pointer-events:all}
+.mob-menu ul{text-align:center}
+.mob-menu li{margin:1rem 0}
+.mob-menu a{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:700;color:rgba(255,255,255,.8);transition:color .2s;font-style:italic}
+.mob-menu a:hover{color:var(--bamboo-l)}
+
+/* ══ BUTTONS ══ */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.82rem 1.8rem;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.02em;border-radius:100px;white-space:nowrap;transition:transform .3s var(--ease),box-shadow .3s,filter .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-ico{width:16px;height:16px;fill:#fff;flex-shrink:0}
+.btn-wa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;box-shadow:0 6px 20px rgba(37,211,102,.25);animation:waPulse 2.8s ease-in-out infinite}
+.btn-wa:hover{animation:none;filter:brightness(1.08)}
+.btn-forest{background:var(--forest);color:#fff;box-shadow:0 6px 20px rgba(26,61,43,.22);animation:fgPulse 3s ease-in-out infinite}
+.btn-forest:hover{animation:none;background:var(--forest-l)}
+.btn-bamboo{background:var(--bamboo);color:#fff;box-shadow:0 6px 20px rgba(196,134,10,.2)}
+.btn-bamboo:hover{background:var(--bamboo-l)}
+.btn-outline{background:transparent;border:1.5px solid var(--forest);color:var(--forest)}
+.btn-outline:hover{background:var(--forest);color:#fff}
+.btn-outline-b{background:transparent;border:1.5px solid var(--bamboo);color:var(--bamboo)}
+.btn-outline-b:hover{background:var(--bamboo);color:#fff}
+.btn-outline-w{background:transparent;border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn-outline-w:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn-linen{background:var(--linen);color:var(--forest);border:1.5px solid var(--border)}
+.btn-linen:hover{border-color:var(--forest)}
+.btn-fab{padding:.68rem 1.25rem;font-size:.78rem}
+
+/* ══ HERO ══ */
+.hero{min-height:100vh;background:var(--forest-d);position:relative;overflow:hidden;display:flex;align-items:center;padding:7rem 5vw 5rem}
+/* Organic texture overlay */
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 20% 60%,rgba(122,170,130,.12) 0%,transparent 50%),
+             radial-gradient(ellipse at 80% 30%,rgba(196,134,10,.1) 0%,transparent 45%),
+             radial-gradient(ellipse at 50% 100%,rgba(26,61,43,.6) 0%,transparent 40%)}
+/* Fine linen weave */
+.hero::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='.6' fill='rgba(255,255,255,.04)'/%3E%3Ccircle cx='0' cy='0' r='.6' fill='rgba(255,255,255,.04)'/%3E%3Ccircle cx='60' cy='0' r='.6' fill='rgba(255,255,255,.04)'/%3E%3Ccircle cx='0' cy='60' r='.6' fill='rgba(255,255,255,.04)'/%3E%3Ccircle cx='60' cy='60' r='.6' fill='rgba(255,255,255,.04)'/%3E%3C/svg%3E");
+  background-size:60px 60px}
+
+.hero-inner{position:relative;z-index:1;max-width:1400px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+
+/* Left */
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;background:rgba(196,134,10,.15);border:1px solid rgba(196,134,10,.35);color:rgba(255,255,255,.7);font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:.32rem .95rem;border-radius:100px;margin-bottom:1.8rem;animation:fadeUp .7s .05s both;width:fit-content}
+.eyebrow-leaf{font-size:.85rem;animation:leafSway 3s ease-in-out infinite;display:inline-block;transform-origin:bottom}
+.hero-title{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(2.8rem,6.5vw,7rem);color:#fff;line-height:.88;letter-spacing:-.02em;margin-bottom:.8rem;animation:fadeUp .9s .15s both}
+.hero-title .pre{font-size:.35em;font-weight:400;font-style:italic;color:rgba(255,255,255,.4);display:block;letter-spacing:.1em;margin-bottom:.2em}
+.hero-title .name{display:block}
+.hero-title .gold{color:var(--bamboo-l)}
+.hero-subtitle{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.4);margin-bottom:1.6rem;letter-spacing:.03em;animation:fadeUp .9s .28s both;line-height:1.8}
+.hero-rule{width:48px;height:2px;background:linear-gradient(to right,var(--bamboo-l),transparent);margin-bottom:1.6rem;animation:fadeUp .9s .3s both}
+.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;animation:fadeUp .9s .42s both}
+.hero-pills{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.6rem;animation:fadeUp .9s .55s both}
+.pill{font-size:.6rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.26rem .8rem;border-radius:100px;border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.4)}
+.pill-gold{border-color:rgba(196,134,10,.4);color:var(--bamboo-l);background:rgba(196,134,10,.1)}
+.pill-sage{border-color:rgba(122,170,130,.4);color:var(--sage-l);background:rgba(122,170,130,.1)}
+.hero-open{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.8rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);font-size:.7rem;padding:.4rem 1rem;border-radius:100px;animation:fadeUp .9s .62s both;width:fit-content}
+.open-dot{width:7px;height:7px;border-radius:50%;background:#22c55e;animation:breathe 2s infinite;box-shadow:0 0 8px rgba(34,197,94,.5);flex-shrink:0}
+
+/* Right: Meridian / Acupuncture SVG */
+.hero-art{display:flex;align-items:center;justify-content:center;animation:fadeIn 1.2s .5s both}
+.hero-art-svg{width:100%;max-width:440px;filter:drop-shadow(0 0 30px rgba(122,170,130,.2))}
+
+/* ══ TICKER ══ */
+.ticker-wrap{overflow:hidden;background:var(--forest);padding:.72rem 0}
+.ticker-track{display:flex;width:max-content;animation:ticker 30s linear infinite}
+.ticker-wrap:hover .ticker-track{animation-play-state:paused}
+.ticker-track span{font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);white-space:nowrap;padding:0 1.4rem}
+.ticker-track .sep{color:var(--bamboo-l);font-size:.65rem;opacity:.8}
+
+/* ══ SHARED SECTION ══ */
+.sec-tag{display:inline-flex;align-items:center;gap:.55rem;font-size:.6rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--bamboo);margin-bottom:.5rem}
+.sec-tag::before{content:'🌿';font-size:.75rem}
+.sec-title{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(2.2rem,5vw,4.8rem);letter-spacing:-.01em;line-height:.9;color:var(--forest-d);margin-bottom:.8rem}
+.sec-title em{font-style:italic;font-weight:400;color:var(--bamboo)}
+.sec-sub{font-size:.9rem;color:var(--muted);max-width:520px;margin-bottom:3.5rem;line-height:2.1}
+
+/* ══ ABOUT ══ */
+.about-sec{padding:8rem 5vw 6rem;background:var(--rice);position:relative;z-index:1}
+.about-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:7rem;align-items:center}
+.about-visual{position:relative}
+.about-card{background:var(--forest);border-radius:20px;padding:2.2rem;overflow:hidden;position:relative}
+.about-card::before{content:'';position:absolute;inset:0;border-radius:20px;background:linear-gradient(145deg,rgba(196,134,10,.12) 0%,transparent 60%)}
+.about-card::after{content:'';position:absolute;inset:0;border-radius:20px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='.5' fill='rgba(255,255,255,.04)'/%3E%3C/svg%3E");
+  background-size:60px 60px}
+.about-card-ico{font-size:2.5rem;display:block;margin-bottom:1.2rem;position:relative;z-index:1;animation:floatY 4s ease-in-out infinite}
+.about-card-title{font-family:'Playfair Display',serif;font-weight:700;font-size:1.5rem;color:#fff;margin-bottom:.5rem;position:relative;z-index:1;letter-spacing:-.01em}
+.about-card-sub{font-size:.84rem;color:rgba(255,255,255,.45);position:relative;z-index:1;line-height:1.9}
+.about-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(196,134,10,.15);border:1px solid rgba(196,134,10,.3);color:var(--bamboo-l);font-size:.58rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.25rem .75rem;border-radius:100px;margin-top:.9rem;position:relative;z-index:1}
+.badge-dot{width:5px;height:5px;border-radius:50%;background:var(--bamboo-l);animation:shimmer 1.8s infinite}
+.about-floater{position:absolute;bottom:-1rem;right:-1rem;width:90px;height:90px;border-radius:50%;background:var(--linen);border:3px solid var(--parchment);display:flex;align-items:center;justify-content:center;font-size:2rem;box-shadow:0 8px 30px rgba(26,61,43,.15)}
+/* About text */
+.about-para{font-size:.93rem;color:var(--muted);line-height:2.2;margin-bottom:1.1rem}
+.about-features{display:flex;flex-direction:column;gap:.7rem;margin:1.8rem 0 2.2rem}
+.af-row{display:flex;align-items:center;gap:.9rem;background:var(--forest-xxl);border:1px solid var(--border);border-radius:100px;padding:.75rem 1.2rem;transition:border-color .2s,transform .3s var(--ease)}
+.af-row:hover{border-color:rgba(26,61,43,.3);transform:translateX(5px)}
+.af-ico{font-size:.9rem;flex-shrink:0}
+.af-text{font-size:.84rem;color:var(--forest-d);font-weight:500}
+.about-btns{display:flex;gap:.9rem;flex-wrap:wrap}
+
+/* ══ THERAPIES ══ */
+.therapies-sec{padding:8rem 5vw 6rem;background:var(--linen);position:relative;z-index:1;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.therapies-inner{max-width:1440px;margin:0 auto}
+.therapies-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.4rem}
+.th-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:1.9rem 1.7rem;position:relative;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s,border-color .3s;cursor:default}
+.th-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--forest),var(--sage),var(--bamboo))}
+.th-card::after{content:attr(data-num);position:absolute;bottom:.5rem;right:1rem;font-family:'Playfair Display',serif;font-weight:900;font-size:3.5rem;color:var(--forest-xxl);line-height:1;pointer-events:none}
+.th-card:hover{transform:translateY(-7px);box-shadow:0 22px 56px rgba(26,61,43,.1);border-color:rgba(26,61,43,.25)}
+.th-ico{font-size:1.7rem;display:block;margin-bottom:1rem;animation:floatY 4s ease-in-out infinite}
+.th-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.1rem;color:var(--forest-d);margin-bottom:.45rem;line-height:1.2}
+.th-desc{font-size:.84rem;color:var(--muted);line-height:2}
+
+/* ══ STATS ══ */
+.stats-band{background:linear-gradient(135deg,var(--forest-d),var(--forest));padding:3.8rem 5vw;position:relative;overflow:hidden}
+.stats-band::before{content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ccircle cx='30' cy='30' r='.5' fill='rgba(255,255,255,.05)'/%3E%3C/svg%3E");
+  background-size:60px 60px}
+.stats-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;position:relative;z-index:1}
+.stat-box{text-align:center;padding:1rem}
+.stat-n{font-family:'Playfair Display',serif;font-weight:800;font-size:3rem;color:#fff;line-height:1;letter-spacing:-.02em}
+.stat-sup{font-size:1.6rem;vertical-align:super;opacity:.5}
+.stat-l{font-size:.62rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:.4rem}
+.stat-sep{width:1px;background:rgba(255,255,255,.08);margin:auto}
+
+/* ══ SUCCESS STORIES ══ */
+.stories-sec{padding:8rem 5vw 6rem;background:var(--rice);position:relative;z-index:1}
+.stories-inner{max-width:1440px;margin:0 auto}
+.stories-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:1.4rem}
+.story-card{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:1.9rem;position:relative;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.story-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(to bottom,var(--forest),var(--sage),var(--bamboo))}
+.story-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,61,43,.09)}
+.story-q{font-family:'Playfair Display',serif;font-size:3.5rem;color:var(--forest-xxl);line-height:.8;margin-bottom:.3rem;font-weight:900;display:block}
+.story-text{font-size:.9rem;color:var(--muted);line-height:2.05;margin-bottom:1.3rem;font-style:italic}
+.story-hr{height:1px;background:var(--border);margin-bottom:1.1rem}
+.story-author{display:flex;align-items:center;gap:.85rem}
+.story-av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--forest-xxl),var(--linen));display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;border:1px solid var(--border)}
+.story-name{font-weight:700;font-size:.86rem;color:var(--forest-d)}
+.story-info{font-size:.7rem;color:var(--muted);margin-top:.1rem}
+.story-tag{display:inline-flex;align-items:center;gap:.3rem;font-size:.56rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.18rem .6rem;border-radius:100px;background:var(--forest-xxl);color:var(--forest);border:1px solid rgba(26,61,43,.2);margin-top:.35rem}
+.stars{color:var(--bamboo);font-size:.75rem;letter-spacing:.04em;margin-top:.3rem}
+
+/* ══ BLOGS ══ */
+.blogs-sec{padding:8rem 5vw 6rem;background:var(--parchment);position:relative;z-index:1;border-top:1px solid var(--border)}
+.blogs-inner{max-width:1440px;margin:0 auto}
+.blogs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1.6rem}
+.blog-card{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s,border-color .3s;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(26,61,43,.1);border-color:rgba(26,61,43,.25)}
+.blog-thumb{height:170px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.blog-thumb-ico{font-size:3rem;opacity:.4;animation:floatY 4s ease-in-out infinite}
+.blog-thumb-cat{position:absolute;top:.85rem;left:.85rem;font-size:.54rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.2rem .65rem;border-radius:100px}
+.cat-forest{background:var(--forest);color:#fff}
+.cat-bamboo{background:var(--bamboo);color:#fff}
+.cat-sage{background:var(--sage);color:var(--forest-d)}
+.blog-body{padding:1.4rem 1.5rem;flex:1;display:flex;flex-direction:column}
+.blog-date{font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.55rem;display:flex;align-items:center;gap:.4rem}
+.blog-date::before{content:'';width:14px;height:1.5px;background:var(--bamboo)}
+.blog-title{font-family:'Playfair Display',serif;font-weight:700;font-size:1.08rem;color:var(--forest-d);line-height:1.3;margin-bottom:.65rem;letter-spacing:-.01em;transition:color .2s}
+.blog-card:hover .blog-title{color:var(--bamboo-d)}
+.blog-excerpt{font-size:.83rem;color:var(--muted);line-height:1.95;flex:1;margin-bottom:1rem}
+.blog-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:.85rem;margin-top:auto}
+.blog-read{font-size:.7rem;font-weight:700;color:var(--forest);display:flex;align-items:center;gap:.3rem;transition:gap .2s}
+.blog-card:hover .blog-read{gap:.6rem}
+.blog-min{font-size:.63rem;color:var(--muted)}
+
+/* ══ CONTACT ══ */
+.contact-sec{padding:8rem 5vw;background:var(--rice);position:relative;z-index:1;border-top:1px solid var(--border)}
+.contact-inner{max-width:1440px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start}
+.info-list{display:flex;flex-direction:column;gap:.85rem;margin-bottom:2.2rem}
+.irow{display:flex;align-items:flex-start;gap:1rem;background:var(--white);border:1px solid var(--border);border-radius:100px;padding:.9rem 1.3rem;transition:border-color .2s,box-shadow .2s}
+.irow:hover{border-color:rgba(26,61,43,.3);box-shadow:0 4px 16px rgba(26,61,43,.07)}
+.i-ico{font-size:.95rem;flex-shrink:0;margin-top:.05rem}
+.i-key{font-size:.54rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--bamboo-d);margin-bottom:.14rem}
+.i-val{font-size:.85rem;color:var(--muted);line-height:1.6}
+.open-tag{display:inline-flex;align-items:center;gap:.35rem;background:var(--forest-xxl);border:1px solid rgba(26,61,43,.2);color:var(--forest);font-size:.56rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .65rem;border-radius:100px}
+.open-tag-dot{width:5px;height:5px;border-radius:50%;background:#22c55e;animation:breathe 2s infinite}
+.contact-btns{display:flex;gap:.9rem;flex-wrap:wrap}
+.map-box{background:var(--white);border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.map-vis{height:240px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,var(--forest-xxl),var(--linen))}
+.map-vis::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(26,61,43,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(26,61,43,.05) 1px,transparent 1px);background-size:28px 28px}
+.map-pin{text-align:center;position:relative;z-index:1}
+.map-pin-ico{font-size:2.8rem;display:block;animation:floatY 3.5s ease-in-out infinite}
+.map-pin-lbl{font-family:'Playfair Display',serif;font-style:italic;font-size:.88rem;color:var(--muted);margin-top:.3rem}
+.map-foot{padding:.9rem 1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+.map-addr{font-size:.76rem;color:var(--muted);line-height:1.5}
+.map-addr strong{color:var(--forest-d);display:block;margin-bottom:.1rem}
+.stat-row2{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem;margin-top:.85rem}
+.sbox{background:var(--forest-xxl);border:1px solid rgba(26,61,43,.15);border-radius:14px;padding:1.1rem;text-align:center;transition:background .2s}
+.sbox:hover{background:var(--sage-xl)}
+.sbox-n{font-family:'Playfair Display',serif;font-weight:800;font-size:1.4rem;color:var(--forest-d);line-height:1}
+.sbox-l{font-size:.55rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+
+/* ══ CTA ══ */
+.cta-sec{background:var(--forest-d);padding:8rem 5vw;text-align:center;position:relative;overflow:hidden;z-index:1}
+.cta-sec::before{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse at 50% 120%,rgba(196,134,10,.15) 0%,transparent 55%),
+             radial-gradient(ellipse at 20% 50%,rgba(122,170,130,.08) 0%,transparent 40%)}
+.cta-inner{max-width:660px;margin:0 auto;position:relative;z-index:1}
+.cta-leaf{font-size:2.2rem;display:block;margin-bottom:.8rem;animation:leafSway 4s ease-in-out infinite;transform-origin:bottom;display:inline-block}
+.cta-title{font-family:'Playfair Display',serif;font-weight:900;font-style:italic;font-size:clamp(2.8rem,7.5vw,7.5rem);color:#fff;line-height:.88;letter-spacing:-.01em;margin-bottom:.7rem}
+.cta-title .gold{color:var(--bamboo-l);font-style:normal}
+.cta-sub{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:rgba(255,255,255,.35);margin-bottom:3rem;line-height:1.9}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-note{display:inline-flex;align-items:center;gap:.5rem;margin-top:2rem;font-size:.7rem;color:rgba(255,255,255,.25);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);padding:.4rem 1rem;border-radius:100px}
+.cta-dot{width:5px;height:5px;border-radius:50%;background:var(--bamboo-l);animation:shimmer 2s infinite;flex-shrink:0}
+
+/* ══ FOOTER ══ */
+.footer{background:var(--forest-d);padding:4rem 5vw 2rem;border-top:3px solid var(--bamboo)}
+.foot-inner{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:1.5rem}
+.foot-name{font-family:'Playfair Display',serif;font-weight:700;font-size:1.35rem;color:#fff;margin-bottom:.3rem;letter-spacing:.01em;font-style:italic}
+.foot-tagline{font-size:.82rem;color:rgba(255,255,255,.3);max-width:240px;line-height:1.8;font-family:'Playfair Display',serif;font-style:italic}
+.foot-cols{display:flex;gap:3.5rem;flex-wrap:wrap}
+.foot-col{display:flex;flex-direction:column;gap:.5rem}
+.foot-col h4{font-size:.56rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:.5rem}
+.foot-col a,.foot-col p{font-size:.84rem;color:rgba(255,255,255,.38);transition:color .2s;line-height:1.7}
+.foot-col a:hover{color:var(--bamboo-l)}
+.foot-bottom{max-width:1440px;margin:0 auto;display:flex;justify-content:space-between;font-size:.65rem;color:rgba(255,255,255,.15);flex-wrap:wrap;gap:.5rem}
+
+/* ══ FAB ══ */
+.fab{display:none;position:fixed;bottom:1.4rem;left:50%;transform:translateX(-50%);z-index:997;gap:.7rem;padding:.52rem .78rem;background:rgba(13,32,24,.97);backdrop-filter:blur(20px);border-radius:100px;box-shadow:0 8px 28px rgba(13,32,24,.5);border:1px solid rgba(196,134,10,.2)}
+
+/* ══ RESPONSIVE ══ */
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-art{display:none}
+  .hero{min-height:auto;padding:8rem 5vw 6rem}
+  .about-inner{grid-template-columns:1fr;gap:3.5rem}
+  .contact-inner{grid-template-columns:1fr;gap:3.5rem}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .ham{display:flex}
+  .fab{display:flex}
+  .cta-sec{padding-bottom:7rem}
+}
+@media(max-width:600px){
+  .foot-inner{flex-direction:column}
+  .foot-cols{flex-direction:column;gap:1.5rem}
+  .foot-bottom{flex-direction:column;text-align:center}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+  .hero-btns,.cta-btns,.about-btns,.contact-btns{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav class="nav" id="nav">
+  <div class="nav-brand">
+    <span class="nav-leaf">🌿</span>
+    <div>
+      <div class="nav-logo-name">Dr. Kasana Acu Health Centre</div>
+      <div class="nav-logo-sub">Naturopathy · Acupuncture · Zeta I, Greater Noida</div>
+    </div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#therapies">Therapies</a></li>
+    <li><a href="#stories">Stories</a></li>
+    <li><a href="#blogs">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+919990445265" class="nav-cta">Book Now</a></li>
+  </ul>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mob-menu" id="mob-menu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#therapies">Therapies</a></li>
+    <li><a href="#stories">Stories</a></li>
+    <li><a href="#blogs">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+919990445265">Call Now</a></li>
+  </ul>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <!-- Left -->
+    <div>
+      <div class="hero-eyebrow"><span class="eyebrow-leaf">🌿</span> RC Plaza, Zeta I, Greater Noida — 201310</div>
+      <h1 class="hero-title">
+        <span class="pre">Dr. Kasana</span>
+        <span class="name">Advance<br/><span class="gold">Naturopathy</span></span>
+      </h1>
+      <div class="hero-rule"></div>
+      <p class="hero-subtitle">& Acu Health Centre — where ancient healing<br/>meets modern wellness.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/919990445265?text=Hello%20Dr.%20Kasana%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20your%20Naturopathy%20%26%20Acu%20Health%20Centre." target="_blank" rel="noopener" class="btn btn-wa">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book on WhatsApp
+        </a>
+        <a href="tel:+919990445265" class="btn btn-outline-w">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          +91 99904 45265
+        </a>
+      </div>
+      <div class="hero-pills">
+        <span class="pill pill-gold">🪡 Acupuncture</span>
+        <span class="pill pill-sage">🌿 Naturopathy</span>
+        <span class="pill pill-gold">💆 Holistic Healing</span>
+        <span class="pill">📍 Zeta I, GN</span>
+      </div>
+      <div class="hero-open"><span class="open-dot"></span> Open Daily · 9:00 AM – 7:30 PM · +91 99904 45265</div>
+    </div>
+
+    <!-- Right: Meridian SVG art -->
+    <div class="hero-art">
+      <svg class="hero-art-svg" viewBox="0 0 420 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="bodyGlow" cx="50%" cy="40%" r="50%">
+            <stop offset="0%" stop-color="rgba(122,170,130,.2)"/>
+            <stop offset="100%" stop-color="rgba(122,170,130,0)"/>
+          </radialGradient>
+          <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <filter id="softglow"><feGaussianBlur stdDeviation="1.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        </defs>
+
+        <!-- Background ambient glow -->
+        <ellipse cx="210" cy="260" rx="180" ry="260" fill="url(#bodyGlow)"/>
+
+        <!-- Outer circle frame -->
+        <circle cx="210" cy="270" r="200" stroke="rgba(122,170,130,.08)" stroke-width="1.5" stroke-dasharray="8 14"/>
+
+        <!-- Human body silhouette - head -->
+        <ellipse cx="210" cy="88" rx="38" ry="44" fill="rgba(122,170,130,.08)" stroke="rgba(122,170,130,.25)" stroke-width="1.5"/>
+        <!-- Neck -->
+        <rect x="198" y="128" width="24" height="22" rx="6" fill="rgba(122,170,130,.06)" stroke="rgba(122,170,130,.18)" stroke-width="1.2"/>
+        <!-- Torso -->
+        <path d="M170 150 Q155 160 150 200 L145 310 Q145 330 165 335 L255 335 Q275 330 275 310 L270 200 Q265 160 250 150 Z" fill="rgba(122,170,130,.07)" stroke="rgba(122,170,130,.2)" stroke-width="1.5"/>
+        <!-- Left arm -->
+        <path d="M170 158 Q148 168 138 200 Q130 230 132 270 Q133 285 140 290 Q148 295 152 285 Q158 260 162 230 Q168 200 172 175 Z" fill="rgba(122,170,130,.05)" stroke="rgba(122,170,130,.15)" stroke-width="1.2"/>
+        <!-- Right arm -->
+        <path d="M250 158 Q272 168 282 200 Q290 230 288 270 Q287 285 280 290 Q272 295 268 285 Q262 260 258 230 Q252 200 248 175 Z" fill="rgba(122,170,130,.05)" stroke="rgba(122,170,130,.15)" stroke-width="1.2"/>
+        <!-- Left leg -->
+        <path d="M175 333 Q165 355 162 400 Q160 440 162 480 Q163 498 172 500 Q182 502 186 490 Q190 460 190 420 Q190 380 188 345 Z" fill="rgba(122,170,130,.05)" stroke="rgba(122,170,130,.15)" stroke-width="1.2"/>
+        <!-- Right leg -->
+        <path d="M245 333 Q255 355 258 400 Q260 440 258 480 Q257 498 248 500 Q238 502 234 490 Q230 460 230 420 Q230 380 232 345 Z" fill="rgba(122,170,130,.05)" stroke="rgba(122,170,130,.15)" stroke-width="1.2"/>
+
+        <!-- ══ MERIDIAN LINES ══ -->
+        <!-- Central Vessel (Ren Mai) - flowing down centre -->
+        <path d="M210 50 L210 88 L210 132 L210 150 L210 240 L210 335 L210 430 L210 500"
+          stroke="rgba(196,134,10,.5)" stroke-width="1.5" fill="none" stroke-linecap="round"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation:flowPath 3s .8s ease forwards"/>
+
+        <!-- Governing Vessel (Du Mai) - back line, shown as second -->
+        <path d="M210 50 Q215 70 212 100 Q208 120 210 135"
+          stroke="rgba(196,134,10,.3)" stroke-width="1" fill="none" stroke-linecap="round"
+          stroke-dasharray="200" stroke-dashoffset="200"
+          style="animation:flowPath 2s 1.2s ease forwards"/>
+
+        <!-- Lung meridian - left arm -->
+        <path d="M195 155 Q185 162 178 175 Q168 195 162 225 Q157 255 155 280 Q153 300 152 285"
+          stroke="rgba(122,170,130,.6)" stroke-width="1.5" fill="none" stroke-linecap="round"
+          stroke-dasharray="400" stroke-dashoffset="400"
+          style="animation:flowPath 2.5s 1s ease forwards"/>
+        <!-- Lung meridian - right arm -->
+        <path d="M225 155 Q235 162 242 175 Q252 195 258 225 Q263 255 265 280 Q267 300 268 285"
+          stroke="rgba(122,170,130,.6)" stroke-width="1.5" fill="none" stroke-linecap="round"
+          stroke-dasharray="400" stroke-dashoffset="400"
+          style="animation:flowPath 2.5s 1.1s ease forwards"/>
+
+        <!-- Stomach meridian - torso/legs left -->
+        <path d="M190 160 Q185 195 184 230 Q183 265 183 300 Q183 330 180 360 Q177 400 174 440 Q172 470 172 495"
+          stroke="rgba(196,134,10,.4)" stroke-width="1.2" fill="none" stroke-linecap="round"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation:flowPath 3s 1.3s ease forwards"/>
+        <!-- Stomach meridian - right -->
+        <path d="M230 160 Q235 195 236 230 Q237 265 237 300 Q237 330 240 360 Q243 400 246 440 Q248 470 248 495"
+          stroke="rgba(196,134,10,.4)" stroke-width="1.2" fill="none" stroke-linecap="round"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation:flowPath 3s 1.4s ease forwards"/>
+
+        <!-- Heart meridian - inner arms -->
+        <path d="M200 160 Q196 175 193 200 Q190 225 188 255 Q186 275 186 290"
+          stroke="rgba(200,80,80,.35)" stroke-width="1" fill="none" stroke-linecap="round"
+          stroke-dasharray="350" stroke-dashoffset="350"
+          style="animation:flowPath 2.5s 1.5s ease forwards"/>
+        <path d="M220 160 Q224 175 227 200 Q230 225 232 255 Q234 275 234 290"
+          stroke="rgba(200,80,80,.35)" stroke-width="1" fill="none" stroke-linecap="round"
+          stroke-dasharray="350" stroke-dashoffset="350"
+          style="animation:flowPath 2.5s 1.6s ease forwards"/>
+
+        <!-- Bladder meridian - along spine sides -->
+        <path d="M200 135 Q198 155 198 180 Q197 210 196 240 Q195 270 195 300 Q194 320 195 340 Q194 370 192 400 Q190 440 188 480"
+          stroke="rgba(80,120,200,.3)" stroke-width="1" fill="none" stroke-linecap="round"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation:flowPath 3s 1.7s ease forwards"/>
+        <path d="M220 135 Q222 155 222 180 Q223 210 224 240 Q225 270 225 300 Q226 320 225 340 Q226 370 228 400 Q230 440 232 480"
+          stroke="rgba(80,120,200,.3)" stroke-width="1" fill="none" stroke-linecap="round"
+          stroke-dasharray="600" stroke-dashoffset="600"
+          style="animation:flowPath 3s 1.8s ease forwards"/>
+
+        <!-- ══ ACUPUNCTURE POINTS (animated needles/dots) ══ -->
+        <!-- Baihui - crown of head -->
+        <circle cx="210" cy="60" r="5" fill="none" stroke="rgba(196,134,10,.8)" stroke-width="1.5" style="animation:flowPath .5s 2.5s ease forwards;stroke-dasharray:50;stroke-dashoffset:50"/>
+        <circle cx="210" cy="60" r="2.5" fill="rgba(196,134,10,.9)" filter="url(#glow)" style="animation:needleDrop .4s 2.8s ease both;opacity:0"/>
+        <!-- Vertical needle line -->
+        <line x1="210" y1="48" x2="210" y2="58" stroke="rgba(196,134,10,.7)" stroke-width="1.5" stroke-linecap="round" style="animation:needleDrop .4s 2.9s ease both;opacity:0"/>
+
+        <!-- Yintang - third eye -->
+        <circle cx="210" cy="82" r="4" fill="none" stroke="rgba(122,170,130,.8)" stroke-width="1.5" style="animation:flowPath .5s 3s ease forwards;stroke-dasharray:40;stroke-dashoffset:40"/>
+        <circle cx="210" cy="82" r="2" fill="rgba(122,170,130,.9)" filter="url(#glow)" style="animation:needleDrop .4s 3.2s ease both;opacity:0"/>
+
+        <!-- Danzhong - chest -->
+        <circle cx="210" cy="192" r="5" fill="none" stroke="rgba(196,134,10,.7)" stroke-width="1.5" style="animation:flowPath .5s 3.2s ease forwards;stroke-dasharray:50;stroke-dashoffset:50"/>
+        <circle cx="210" cy="192" r="2.5" fill="rgba(196,134,10,.8)" filter="url(#glow)" style="animation:needleDrop .4s 3.4s ease both;opacity:0"/>
+        <line x1="210" y1="180" x2="210" y2="190" stroke="rgba(196,134,10,.6)" stroke-width="1.5" stroke-linecap="round" style="animation:needleDrop .4s 3.4s ease both;opacity:0"/>
+
+        <!-- Qihai - lower dantian -->
+        <circle cx="210" cy="258" r="6" fill="none" stroke="rgba(122,170,130,.8)" stroke-width="2" style="animation:flowPath .5s 3.4s ease forwards;stroke-dasharray:60;stroke-dashoffset:60"/>
+        <circle cx="210" cy="258" r="3" fill="rgba(122,170,130,.9)" filter="url(#glow)" style="animation:needleDrop .4s 3.6s ease both;opacity:0"/>
+        <!-- Ripple at dantian -->
+        <circle cx="210" cy="258" r="6" fill="none" stroke="rgba(122,170,130,.4)" stroke-width="1" style="animation:ripple 2.5s 4s ease-out infinite;opacity:0"/>
+
+        <!-- Zusanli - left leg -->
+        <circle cx="176" cy="370" r="4.5" fill="none" stroke="rgba(196,134,10,.7)" stroke-width="1.5" style="animation:flowPath .5s 3.6s ease forwards;stroke-dasharray:45;stroke-dashoffset:45"/>
+        <circle cx="176" cy="370" r="2" fill="rgba(196,134,10,.8)" filter="url(#softglow)" style="animation:needleDrop .4s 3.8s ease both;opacity:0"/>
+        <line x1="176" y1="360" x2="176" y2="369" stroke="rgba(196,134,10,.5)" stroke-width="1.2" stroke-linecap="round" style="animation:needleDrop .4s 3.8s ease both;opacity:0"/>
+        <!-- Zusanli right -->
+        <circle cx="244" cy="370" r="4.5" fill="none" stroke="rgba(196,134,10,.7)" stroke-width="1.5" style="animation:flowPath .5s 3.7s ease forwards;stroke-dasharray:45;stroke-dashoffset:45"/>
+        <circle cx="244" cy="370" r="2" fill="rgba(196,134,10,.8)" filter="url(#softglow)" style="animation:needleDrop .4s 3.9s ease both;opacity:0"/>
+        <line x1="244" y1="360" x2="244" y2="369" stroke="rgba(196,134,10,.5)" stroke-width="1.2" stroke-linecap="round" style="animation:needleDrop .4s 3.9s ease both;opacity:0"/>
+
+        <!-- Neiguan - inner wrist left -->
+        <circle cx="148" cy="272" r="3.5" fill="none" stroke="rgba(122,170,130,.7)" stroke-width="1.5" style="animation:flowPath .5s 4s ease forwards;stroke-dasharray:35;stroke-dashoffset:35"/>
+        <circle cx="148" cy="272" r="1.8" fill="rgba(122,170,130,.9)" filter="url(#softglow)" style="animation:needleDrop .4s 4.2s ease both;opacity:0"/>
+        <!-- Right -->
+        <circle cx="272" cy="272" r="3.5" fill="none" stroke="rgba(122,170,130,.7)" stroke-width="1.5" style="animation:flowPath .5s 4.1s ease forwards;stroke-dasharray:35;stroke-dashoffset:35"/>
+        <circle cx="272" cy="272" r="1.8" fill="rgba(122,170,130,.9)" filter="url(#softglow)" style="animation:needleDrop .4s 4.3s ease both;opacity:0"/>
+
+        <!-- Taichong - foot left -->
+        <circle cx="172" cy="490" r="4" fill="none" stroke="rgba(196,134,10,.6)" stroke-width="1.5" style="animation:flowPath .5s 4.2s ease forwards;stroke-dasharray:40;stroke-dashoffset:40"/>
+        <circle cx="172" cy="490" r="2" fill="rgba(196,134,10,.7)" filter="url(#softglow)" style="animation:needleDrop .4s 4.4s ease both;opacity:0"/>
+        <!-- Right -->
+        <circle cx="248" cy="490" r="4" fill="none" stroke="rgba(196,134,10,.6)" stroke-width="1.5" style="animation:flowPath .5s 4.3s ease forwards;stroke-dasharray:40;stroke-dashoffset:40"/>
+        <circle cx="248" cy="490" r="2" fill="rgba(196,134,10,.7)" filter="url(#softglow)" style="animation:needleDrop .4s 4.5s ease both;opacity:0"/>
+
+        <!-- Energy flow dots along central meridian -->
+        <g fill="rgba(196,134,10,.5)">
+          <circle cx="210" cy="108" r="2.5" style="animation:energyGlow 3s 2s ease-in-out infinite"/>
+          <circle cx="210" cy="160" r="2"   style="animation:energyGlow 3s 2.3s ease-in-out infinite"/>
+          <circle cx="210" cy="215" r="2"   style="animation:energyGlow 3s 2.6s ease-in-out infinite"/>
+          <circle cx="210" cy="295" r="2"   style="animation:energyGlow 3s 2.9s ease-in-out infinite"/>
+          <circle cx="210" cy="340" r="2"   style="animation:energyGlow 3s 3.2s ease-in-out infinite"/>
+          <circle cx="210" cy="400" r="2"   style="animation:energyGlow 3s 3.5s ease-in-out infinite"/>
+          <circle cx="210" cy="455" r="2"   style="animation:energyGlow 3s 3.8s ease-in-out infinite"/>
+        </g>
+
+        <!-- Point labels -->
+        <text x="225" y="63" font-family="'DM Sans',sans-serif" font-size="8" fill="rgba(196,134,10,.55)" font-weight="600">Baihui</text>
+        <text x="225" y="195" font-family="'DM Sans',sans-serif" font-size="8" fill="rgba(196,134,10,.55)" font-weight="600">Danzhong</text>
+        <text x="225" y="261" font-family="'DM Sans',sans-serif" font-size="8" fill="rgba(122,170,130,.6)" font-weight="600">Qihai</text>
+        <text x="120" y="373" font-family="'DM Sans',sans-serif" font-size="7.5" fill="rgba(196,134,10,.5)" font-weight="600">Zusanli</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TICKER ══ -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>Naturopathy</span><span class="sep"> ✦ </span>
+    <span>Acupuncture</span><span class="sep"> ✦ </span>
+    <span>Pain Management</span><span class="sep"> ✦ </span>
+    <span>Stress Relief</span><span class="sep"> ✦ </span>
+    <span>Holistic Healing</span><span class="sep"> ✦ </span>
+    <span>Energy Therapy</span><span class="sep"> ✦ </span>
+    <span>Migraine Relief</span><span class="sep"> ✦ </span>
+    <span>Natural Wellness</span><span class="sep"> ✦ </span>
+    <span>Naturopathy</span><span class="sep"> ✦ </span>
+    <span>Acupuncture</span><span class="sep"> ✦ </span>
+    <span>Pain Management</span><span class="sep"> ✦ </span>
+    <span>Stress Relief</span><span class="sep"> ✦ </span>
+    <span>Holistic Healing</span><span class="sep"> ✦ </span>
+    <span>Energy Therapy</span><span class="sep"> ✦ </span>
+    <span>Migraine Relief</span><span class="sep"> ✦ </span>
+    <span>Natural Wellness</span><span class="sep"> ✦ </span>
+  </div>
+</div>
+
+<!-- ══ ABOUT ══ -->
+<section class="about-sec" id="about">
+  <div class="about-inner">
+    <div class="about-visual reveal">
+      <div class="about-card">
+        <span class="about-card-ico">🪡</span>
+        <div class="about-card-title">Dr. Kasana</div>
+        <div class="about-card-sub">Advance Naturopathy & Acu Health Centre — combining the ancient wisdom of acupuncture with modern naturopathic science for complete, drug-free healing.</div>
+        <div class="about-badge"><span class="badge-dot"></span> Open Daily 9 AM – 7:30 PM</div>
+        <div style="height:1px;background:rgba(255,255,255,.08);margin:1.2rem 0"></div>
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+          <div style="display:flex;align-items:center;gap:.75rem;position:relative;z-index:1">
+            <span style="font-size:.85rem">📞</span>
+            <div>
+              <div style="font-size:.52rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(196,134,10,.6);margin-bottom:.08rem">Phone & WhatsApp</div>
+              <div style="font-size:.85rem;color:rgba(255,255,255,.55)">+91 99904 45265</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.75rem;position:relative;z-index:1">
+            <span style="font-size:.85rem;margin-top:.1rem">📍</span>
+            <div>
+              <div style="font-size:.52rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:rgba(196,134,10,.6);margin-bottom:.08rem">Address</div>
+              <div style="font-size:.82rem;color:rgba(255,255,255,.45);line-height:1.7">RC Plaza, 16, Opposite Assotech Society<br/>Block C, Sakipur, Zeta I, Greater Noida<br/>Uttar Pradesh — 201310</div>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/919990445265?text=Hello%20Dr.%20Kasana%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn btn-wa" style="margin-top:1.4rem;position:relative;z-index:1;justify-content:center">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book Appointment
+        </a>
+      </div>
+      <div class="about-floater">🌿</div>
+    </div>
+
+    <div class="reveal" style="animation-delay:.2s">
+      <span class="sec-tag">Our Philosophy</span>
+      <h2 class="sec-title">Heal <em>Naturally,</em><br/>Live Fully.</h2>
+      <p class="about-para">Dr. Kasana Advance Naturopathy & Acu Health Centre is dedicated to restoring health through the body's own healing intelligence — without reliance on drugs or invasive procedures.</p>
+      <p class="about-para">Located at RC Plaza, Zeta I, Greater Noida, the centre combines classical acupuncture, naturopathic medicine and energy-based therapies to address the root cause of illness, not just symptoms.</p>
+      <div class="about-features">
+        <div class="af-row"><span class="af-ico">🪡</span><div class="af-text">Classical & advance acupuncture techniques</div></div>
+        <div class="af-row"><span class="af-ico">🌿</span><div class="af-text">Evidence-based naturopathic medicine</div></div>
+        <div class="af-row"><span class="af-ico">⚡</span><div class="af-text">Energy meridian balancing & detox</div></div>
+        <div class="af-row"><span class="af-ico">💆</span><div class="af-text">Chronic pain, stress & lifestyle disorders</div></div>
+        <div class="af-row"><span class="af-ico">🕘</span><div class="af-text">Open every day, 9:00 AM to 7:30 PM</div></div>
+      </div>
+      <div class="about-btns">
+        <a href="tel:+919990445265" class="btn btn-forest">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Now
+        </a>
+        <a href="#therapies" class="btn btn-outline">Explore Therapies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ THERAPIES ══ -->
+<section class="therapies-sec" id="therapies">
+  <div class="therapies-inner">
+    <span class="sec-tag reveal">What We Offer</span>
+    <h2 class="sec-title reveal" style="animation-delay:.1s">Healing <em>Therapies</em></h2>
+    <p class="sec-sub reveal" style="animation-delay:.2s">A comprehensive range of natural and holistic treatments — each targeting specific conditions through time-tested and modern naturopathic approaches.</p>
+    <div class="therapies-grid">
+      <div class="th-card reveal" data-num="01" style="animation-delay:.04s"><span class="th-ico">🪡</span><div class="th-name">Acupuncture</div><div class="th-desc">Classical needle acupuncture targeting meridian points to restore energy flow, relieve pain and stimulate the body's natural healing response.</div></div>
+      <div class="th-card reveal" data-num="02" style="animation-delay:.08s"><span class="th-ico">⚡</span><div class="th-name">Electro-Acupuncture</div><div class="th-desc">Mild electrical stimulation applied to acupuncture needles for enhanced therapeutic effect in musculoskeletal and neurological conditions.</div></div>
+      <div class="th-card reveal" data-num="03" style="animation-delay:.12s"><span class="th-ico">🌿</span><div class="th-name">Naturopathic Medicine</div><div class="th-desc">Treating root causes using nutrition, herbal medicine, hydrotherapy and lifestyle modification — a complete holistic health system.</div></div>
+      <div class="th-card reveal" data-num="04" style="animation-delay:.16s"><span class="th-ico">🔥</span><div class="th-name">Moxibustion</div><div class="th-desc">Therapeutic heat using burning moxa applied to acupoints to warm meridians, improve circulation and relieve cold-pattern disorders.</div></div>
+      <div class="th-card reveal" data-num="05" style="animation-delay:.2s"><span class="th-ico">🫧</span><div class="th-name">Cupping Therapy</div><div class="th-desc">Negative pressure cups placed on the skin to release tension, improve blood flow and detoxify deep muscle and connective tissue.</div></div>
+      <div class="th-card reveal" data-num="06" style="animation-delay:.24s"><span class="th-ico">💆</span><div class="th-name">Auricular Therapy</div><div class="th-desc">Ear acupuncture targeting reflex points that correspond to organs and body systems — effective for addiction, stress and pain relief.</div></div>
+      <div class="th-card reveal" data-num="07" style="animation-delay:.28s"><span class="th-ico">🧘</span><div class="th-name">Lifestyle & Nutrition</div><div class="th-desc">Personalised diet plans, detox protocols and wellness counselling to support long-term health and disease prevention.</div></div>
+      <div class="th-card reveal" data-num="08" style="animation-delay:.32s"><span class="th-ico">🌊</span><div class="th-name">Hydrotherapy</div><div class="th-desc">Water-based therapeutic treatments using temperature, pressure and immersion to stimulate circulation and accelerate recovery.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ══ -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div class="stat-box reveal"><div class="stat-n">3000<span class="stat-sup">+</span></div><div class="stat-l">Patients Healed</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-box reveal" style="animation-delay:.08s"><div class="stat-n">8</div><div class="stat-l">Therapy Modalities</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-box reveal" style="animation-delay:.16s"><div class="stat-n">7</div><div class="stat-l">Days a Week</div></div>
+    <div class="stat-sep"></div>
+    <div class="stat-box reveal" style="animation-delay:.24s"><div class="stat-n">100<span class="stat-sup">%</span></div><div class="stat-l">Drug-Free Healing</div></div>
+  </div>
+</div>
+
+<!-- ══ SUCCESS STORIES ══ -->
+<section class="stories-sec" id="stories">
+  <div class="stories-inner">
+    <span class="sec-tag reveal">Patient Voices</span>
+    <h2 class="sec-title reveal" style="animation-delay:.1s">Stories of <em>Healing</em></h2>
+    <p class="sec-sub reveal" style="animation-delay:.2s">Real recoveries. Real relief. Patients who found natural healing at Dr. Kasana's Acu Health Centre in Zeta I, Greater Noida.</p>
+    <div class="stories-grid">
+
+      <div class="story-card reveal" style="animation-delay:.04s">
+        <span class="story-q">"</span>
+        <p class="story-text">I had suffered from chronic lower back pain for six years. After just eight sessions of acupuncture with Dr. Kasana, my pain reduced by nearly 80%. No drugs, no surgery. I wish I had come sooner.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👨</div><div><div class="story-name">Vikas Sharma</div><div class="story-info">Zeta I, Greater Noida</div><div class="story-tag">🪡 Chronic Back Pain</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+      <div class="story-card reveal" style="animation-delay:.08s">
+        <span class="story-q">"</span>
+        <p class="story-text">My migraines were debilitating — three to four attacks a week. Dr. Kasana's combination of acupuncture and naturopathy brought them down to once a month. A complete transformation in my quality of life.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👩</div><div><div class="story-name">Sunita Agarwal</div><div class="story-info">Gamma-2, Greater Noida</div><div class="story-tag">💆 Chronic Migraine</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+      <div class="story-card reveal" style="animation-delay:.12s">
+        <span class="story-q">"</span>
+        <p class="story-text">I came with severe cervical spondylitis and couldn't turn my neck properly. After cupping and acupuncture sessions, my mobility is fully restored. The care here is genuinely outstanding.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👨</div><div><div class="story-name">Rajesh Chaudhary</div><div class="story-info">Beta-2, Greater Noida</div><div class="story-tag">🪡 Cervical Spondylitis</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+      <div class="story-card reveal" style="animation-delay:.16s">
+        <span class="story-q">"</span>
+        <p class="story-text">Anxiety and insomnia had ruined my life for two years. Dr. Kasana's auricular therapy and naturopathic counselling gave me my sleep back. I now sleep 7–8 hours naturally without any medication.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👩</div><div><div class="story-name">Priya Chauhan</div><div class="story-info">Alpha-1, Greater Noida</div><div class="story-tag">🧘 Anxiety & Insomnia</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+      <div class="story-card reveal" style="animation-delay:.2s">
+        <span class="story-q">"</span>
+        <p class="story-text">Frozen shoulder for over a year — even physiotherapy had failed. Three weeks of electro-acupuncture here and I can raise my arm above my head again. The results are nothing short of miraculous.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👴</div><div><div class="story-name">Mahesh Tiwari</div><div class="story-info">Delta-1, Greater Noida</div><div class="story-tag">⚡ Frozen Shoulder</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+      <div class="story-card reveal" style="animation-delay:.24s">
+        <span class="story-q">"</span>
+        <p class="story-text">My knee osteoarthritis was progressing and surgery was being suggested. Dr. Kasana's naturopathic approach has slowed the progression significantly and eliminated the need for daily painkillers. Highly recommend.</p>
+        <div class="story-hr"></div>
+        <div class="story-author"><div class="story-av">👩</div><div><div class="story-name">Kavita Nair</div><div class="story-info">Zeta II, Greater Noida</div><div class="story-tag">🌿 Knee Osteoarthritis</div><div class="stars">★★★★★</div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ BLOGS ══ -->
+<section class="blogs-sec" id="blogs">
+  <div class="blogs-inner">
+    <span class="sec-tag reveal">Healing Wisdom</span>
+    <h2 class="sec-title reveal" style="animation-delay:.1s">From the <em>Healer's</em><br/>Desk</h2>
+    <p class="sec-sub reveal" style="animation-delay:.2s">Insights on natural healing, acupuncture science and naturopathic wellness — from Dr. Kasana's practice in Greater Noida.</p>
+    <div class="blogs-grid">
+
+      <div class="blog-card reveal" style="animation-delay:.04s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#0d2018,#1a3d2b)">
+          <span class="blog-thumb-ico">🪡</span>
+          <span class="blog-thumb-cat cat-bamboo">Acupuncture</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">March 2025</div>
+          <h3 class="blog-title">How Acupuncture Relieves Chronic Pain — The Science of Meridian Healing</h3>
+          <p class="blog-excerpt">Modern research now validates what Chinese medicine has known for centuries — acupuncture stimulates endorphins, regulates the nervous system and resets pain pathways.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">5 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" style="animation-delay:.08s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a3a26,#2d6040)">
+          <span class="blog-thumb-ico">🌿</span>
+          <span class="blog-thumb-cat cat-forest">Naturopathy</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">February 2025</div>
+          <h3 class="blog-title">Naturopathy vs Allopathy — Choosing the Right Approach for Your Condition</h3>
+          <p class="blog-excerpt">Not every condition requires drugs. Understanding when natural medicine is the better, safer and more sustainable choice — a guide from a practicing naturopath.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">7 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" style="animation-delay:.12s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#3a2a1a,#7a5410)">
+          <span class="blog-thumb-ico">💆</span>
+          <span class="blog-thumb-cat cat-bamboo">Wellness</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">January 2025</div>
+          <h3 class="blog-title">5 Acupressure Points You Can Use at Home for Instant Stress Relief</h3>
+          <p class="blog-excerpt">You don't need needles for every benefit acupuncture offers. These five pressure points can be self-applied anywhere for rapid relief from stress and anxiety.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">4 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" style="animation-delay:.16s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a2a3a,#2d4a6a)">
+          <span class="blog-thumb-ico">🔥</span>
+          <span class="blog-thumb-cat cat-sage">Moxibustion</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">December 2024</div>
+          <h3 class="blog-title">Moxibustion — The Ancient Heat Therapy That Doctors Are Rediscovering</h3>
+          <p class="blog-excerpt">From boosting immunity to correcting breech positions in pregnancy, moxibustion's therapeutic applications are broader than most people realise.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">6 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" style="animation-delay:.2s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a1a2a,#3a2a5a)">
+          <span class="blog-thumb-ico">🧘</span>
+          <span class="blog-thumb-cat cat-forest">Lifestyle</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">November 2024</div>
+          <h3 class="blog-title">The Gut-Brain Connection — How Naturopathy Heals Anxiety Through the Digestive System</h3>
+          <p class="blog-excerpt">90% of serotonin is produced in the gut. Understanding this link unlocks new naturopathic approaches to mental health without medication.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">8 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-card reveal" style="animation-delay:.24s">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#1a3030,#0e6060)">
+          <span class="blog-thumb-ico">🌊</span>
+          <span class="blog-thumb-cat cat-sage">Hydrotherapy</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-date">October 2024</div>
+          <h3 class="blog-title">Hydrotherapy at Home — Simple Water Treatments for Pain, Fatigue and Detox</h3>
+          <p class="blog-excerpt">Cold plunges, contrast showers, foot baths — hydrotherapy's powerful healing effects are accessible to everyone. Here's how to start safely.</p>
+          <div class="blog-foot"><span class="blog-read">Read Article →</span><span class="blog-min">5 min read</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-sec" id="contact">
+  <div class="contact-inner">
+    <div>
+      <span class="sec-tag reveal">Find Us</span>
+      <h2 class="sec-title reveal" style="animation-delay:.1s">Visit Our <em>Healing</em><br/>Centre</h2>
+      <p class="sec-sub reveal" style="animation-delay:.2s">Open every day from 9 AM to 7:30 PM. Walk in or book your appointment via WhatsApp or phone.</p>
+      <div class="info-list reveal" style="animation-delay:.25s">
+        <div class="irow"><span class="i-ico">📞</span><div><div class="i-key">Phone & WhatsApp</div><div class="i-val">+91 99904 45265</div></div></div>
+        <div class="irow"><span class="i-ico">🕘</span><div><div class="i-key">Clinic Hours</div><div class="i-val"><span class="open-tag"><span class="open-tag-dot"></span> Open Daily</span> &nbsp; 9:00 AM – 7:30 PM · Every Day</div></div></div>
+        <div class="irow"><span class="i-ico">📍</span><div><div class="i-key">Address</div><div class="i-val">RC Plaza, 16, Opposite Assotech Society<br/>Block C, Sakipur, Zeta I, Greater Noida<br/>Delhi, Uttar Pradesh — 201310</div></div></div>
+        <div class="irow"><span class="i-ico">🗺️</span><div><div class="i-key">Nearby Landmark</div><div class="i-val">RC Plaza · Opposite Assotech Society · Zeta I, Greater Noida</div></div></div>
+      </div>
+      <div class="contact-btns reveal" style="animation-delay:.35s">
+        <a href="https://wa.me/919990445265?text=Hello%20Dr.%20Kasana%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20your%20Naturopathy%20%26%20Acu%20Health%20Centre." target="_blank" rel="noopener" class="btn btn-wa">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book Appointment
+        </a>
+        <a href="tel:+919990445265" class="btn btn-forest">
+          <svg class="btn-ico" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Now
+        </a>
+        <a href="https://maps.google.com/?q=RC+Plaza+16+Opposite+Assotech+Society+Block+C+Sakipur+Zeta+I+Greater+Noida+201310" target="_blank" rel="noopener" class="btn btn-linen">🗺️ &nbsp;Directions</a>
+      </div>
+    </div>
+
+    <div class="reveal" style="animation-delay:.25s">
+      <div class="map-box">
+        <div class="map-vis">
+          <div class="map-pin">
+            <span class="map-pin-ico">🏥</span>
+            <div class="map-pin-lbl">Dr. Kasana Acu Health Centre</div>
+          </div>
+        </div>
+        <div class="map-foot">
+          <div class="map-addr"><strong>RC Plaza, 16, Opp. Assotech Society</strong>Block C, Sakipur, Zeta I, Greater Noida — 201310</div>
+          <a href="https://maps.google.com/?q=RC+Plaza+16+Opposite+Assotech+Society+Block+C+Sakipur+Zeta+I+Greater+Noida+201310" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:.7rem;padding:.46rem .95rem">Directions ↗</a>
+        </div>
+      </div>
+      <div class="stat-row2">
+        <div class="sbox"><div class="sbox-n">9AM</div><div class="sbox-l">Opens Daily</div></div>
+        <div class="sbox"><div class="sbox-n">7:30PM</div><div class="sbox-l">Closes Daily</div></div>
+        <div class="sbox"><div class="sbox-n">7</div><div class="sbox-l">Days a Week</div></div>
+        <div class="sbox"><div class="sbox-n">45265</div><div class="sbox-l">Call Now</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-sec">
+  <div class="cta-inner">
+    <span class="cta-leaf reveal">🌿</span>
+    <h2 class="cta-title reveal" style="animation-delay:.08s">Begin Your<br/><span class="gold">Natural</span><br/>Healing.</h2>
+    <p class="cta-sub reveal" style="animation-delay:.18s">Open daily 9:00 AM – 7:30 PM · RC Plaza, Zeta I, Greater Noida</p>
+    <div class="cta-btns reveal" style="animation-delay:.28s">
+      <a href="https://wa.me/919990445265?text=Hello%20Dr.%20Kasana%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20your%20Naturopathy%20%26%20Acu%20Health%20Centre." target="_blank" rel="noopener" class="btn btn-wa">
+        <svg class="btn-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Appointment
+      </a>
+      <a href="tel:+919990445265" class="btn btn-bamboo">
+        <svg class="btn-ico" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        +91 99904 45265
+      </a>
+    </div>
+    <div class="cta-note reveal" style="animation-delay:.38s"><span class="cta-dot"></span> RC Plaza, 16, Opposite Assotech Society, Block C, Sakipur, Zeta I, Greater Noida — 201310</div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer">
+  <div class="foot-inner">
+    <div>
+      <div class="foot-name">Dr. Kasana Acu Health Centre</div>
+      <p class="foot-tagline">Advance Naturopathy & Acupuncture. Natural healing, naturally.</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p>+91 99904 45265</p>
+        <a href="https://wa.me/919990445265" target="_blank">WhatsApp Us</a>
+      </div>
+      <div class="foot-col">
+        <h4>Address</h4>
+        <p>RC Plaza, 16, Opp. Assotech Society</p>
+        <p>Block C, Sakipur, Zeta I</p>
+        <p>Greater Noida — 201310</p>
+        <p>Uttar Pradesh</p>
+      </div>
+      <div class="foot-col">
+        <h4>Hours</h4>
+        <p>Open Daily</p>
+        <p>9:00 AM – 7:30 PM</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <a href="#about">About</a>
+        <a href="#therapies">Therapies</a>
+        <a href="#stories">Success Stories</a>
+        <a href="#blogs">Healing Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Dr. Kasana Advance Naturopathy & Acu Health Centre. All rights reserved.</span>
+    <span>Deployed on Cloudflare Pages ⚡</span>
+  </div>
+</footer>
+
+<!-- ══ MOBILE FAB ══ -->
+<div class="fab" id="fab">
+  <a href="https://wa.me/919990445265?text=Hello%20Dr.%20Kasana%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn btn-wa btn-fab">
+    <svg class="btn-ico" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+  <a href="tel:+919990445265" class="btn btn-forest btn-fab">
+    <svg class="btn-ico" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+    Call Now
+  </a>
+</div>
+
+<script>
+'use strict';
+(function(){
+  var nav=document.getElementById('nav');
+  if(!nav)return;
+  var t=false;
+  window.addEventListener('scroll',function(){if(!t){requestAnimationFrame(function(){nav.classList.toggle('stuck',window.scrollY>60);t=false});t=true}},{passive:true});
+})();
+(function(){
+  var ham=document.getElementById('ham'),menu=document.getElementById('mob-menu');
+  if(!ham||!menu)return;
+  var open=false;
+  function toggle(s){open=(s!==undefined)?s:!open;ham.classList.toggle('open',open);menu.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}
+  ham.addEventListener('click',function(){toggle()});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggle(false)})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&open)toggle(false)});
+})();
+(function(){
+  document.querySelectorAll('a[href^="#"]').forEach(function(l){
+    l.addEventListener('click',function(e){
+      var t=document.getElementById(l.getAttribute('href').slice(1));
+      if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+})();
+</script>
+</body>
+</html>

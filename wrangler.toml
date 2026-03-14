@@ -1,0 +1,5 @@
+name               = "dr-kasana-acu-health-centre"
+compatibility_date = "2024-01-01"
+# Cloudflare Pages: Framework: None, Build: empty, Output: empty
+# CLI: wrangler pages deploy . --project-name dr-kasana-acu-health-centre
+# Webhook: wrangler pages secret put APPOINTMENT_WEBHOOK_URL
